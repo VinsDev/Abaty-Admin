@@ -1,0 +1,35 @@
+/* Content.css */
+
+.content-container {
+    height: auto;
+    max-height: auto; /* Set a maximum height for the container */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; /* Set initial color to transparent */
+  }
+  
+  /* Custom styles for the scrollbar */
+  .content-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .content-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Set initial track background color to transparent */
+  }
+  
+  .content-container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set initial thumb color to transparent */
+    border-radius: 10px;
+  }
+  
+  /* Apply styles when hovered or focused */
+  .content-container:hover::-webkit-scrollbar-thumb,
+  .content-container:focus::-webkit-scrollbar-thumb {
+    background-color: #dadde1;
+  }
+  
+  .content-container:hover::-webkit-scrollbar-track,
+  .content-container:focus::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+  

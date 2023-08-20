@@ -1,0 +1,188 @@
+/* ProductComponent.css */
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.filter-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.product-card {
+  display: flex;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-image img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.product-details h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.product-details p {
+  margin-top: 5px;
+  color: #555;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.add-button-container {
+  margin-top: 1.2rem;
+}
+
+.view-more {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.view-more:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Content Styles */
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  margin: auto;
+  /* Center horizontally */
+  position: absolute;
+  /* Position the modal */
+  top: 50%;
+  /* Move the modal down by 50% of the parent height */
+  left: 50%;
+  /* Move the modal horizontally by 50% of the parent width */
+  transform: translate(-50%, -50%);
+  /* Center the modal using negative margins */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.modal-content .input-field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal-content .add-button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.modal-content .add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Details Modal Content Styles */
+
+.details-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  /* Center horizontally */
+  position: absolute;
+  /* Position the modal */
+  top: 50%;
+  /* Move the modal down by 50% of the parent height */
+  left: 50%;
+  /* Move the modal horizontally by 50% of the parent width */
+  transform: translate(-50%, -50%);
+  /* Center the modal using negative margins */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.details-modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.details-modal-content p {
+  margin: 5px 0;
+  color: #444;
+}
+
+.details-modal-content .edit-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.details-modal-content .edit-button:hover {
+  background-color: #45a049;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-input {
+  display: none;
+}
